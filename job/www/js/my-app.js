@@ -91,13 +91,16 @@ if( /(android)/i.test(navigator.userAgent) ) {
 }
 
 function initApp() {
-    if (AdMob) {
+/*    if (AdMob) {
         AdMob.createBanner({
             adId : admobid.banner,
             position : AdMob.AD_POSITION.BOTTOM_CENTER,
             autoShow : true
         });
     }
+    */
+	admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
+	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
 }
 
 document.addEventListener('deviceready', initApp, false);
