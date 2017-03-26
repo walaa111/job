@@ -99,8 +99,10 @@ function initApp() {
         });
     }
     */
+	alert("Ready");
 	admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
 	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
+	alert("Ad Done");
 }
 
 window.onload = function(){
