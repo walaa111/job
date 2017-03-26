@@ -103,7 +103,9 @@ function initApp() {
 	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
 }
 
+window.onload = function(){
 document.addEventListener('deviceready', initApp, false);
+};
 
     // $(".ser-link").on("click",function(e){
     //     e.preventDefault();
