@@ -1,14 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.realdeal.job guid" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>job guid  </name>
+    <name>Job guide  </name>
     <description>
 job guid
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
+    <author email="info@realdealagency.com" href="http://www.realdealagency.com">
 job guid
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="admob" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
