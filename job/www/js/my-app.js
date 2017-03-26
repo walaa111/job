@@ -42,6 +42,12 @@ myApp.onPageInit('about', function (page) {
     });
 });
 
+myApp.onPageInit('index', function (page) {
+	alert("index init");
+	admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
+	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
+	alert("Ad Done");
+});
 // Generate dynamic page
 var dynamicPageIndex = 0;
 function createContentPage() {
