@@ -119,9 +119,9 @@ function initApp() {
 	myApp.alert("Ad Done");
 }
 
-window.onload = function(){
+//window.onload = function(){
 document.addEventListener('deviceready', initApp, false);
-};
+//};
 
     // $(".ser-link").on("click",function(e){
     //     e.preventDefault();
