@@ -44,8 +44,16 @@ myApp.onPageInit('about', function (page) {
 
 myApp.onPageInit('index', function (page) {
 	myApp.alert("index init");
-	admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
+	/*admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
 	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
+	*/
+	if (AdMob) {
+		AdMob.createBanner({
+		    adId : admobid.banner,
+		    position : AdMob.AD_POSITION.BOTTOM_CENTER,
+		    autoShow : true
+		});
+    	}
 	myApp.alert("Ad Done");
 });
 // Generate dynamic page
@@ -97,17 +105,17 @@ if( /(android)/i.test(navigator.userAgent) ) {
 }
 
 function initApp() {
-/*    if (AdMob) {
+    if (AdMob) {
         AdMob.createBanner({
             adId : admobid.banner,
             position : AdMob.AD_POSITION.BOTTOM_CENTER,
             autoShow : true
         });
     }
-    */
+    
 	myApp.alert("Ready");
-	admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
-	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
+	//admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
+	//admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
 	myApp.alert("Ad Done");
 }
 
