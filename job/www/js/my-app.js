@@ -44,6 +44,9 @@ myApp.onPageInit('about', function (page) {
 
 myApp.onPageInit('index', function (page) {
 	myApp.alert("index init");
+	$$('.create-page').on('click', function () {
+		createContentPage();
+	});
 	/*admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
 	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
 	*/
